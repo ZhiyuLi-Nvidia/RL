@@ -11,6 +11,9 @@ policy:
     enabled: false
   megatron_cfg:
     enabled: true
+    checkpoint:
+      async_save: true
+      ckpt_assume_constant_structure: true
     use_linear_ce_fusion_loss: true
     linear_ce_fusion_chunk_size: 128
     tensor_model_parallel_size: 4

@@ -12,6 +12,9 @@ policy:
     enabled: false
   megatron_cfg:
     enabled: true
+    checkpoint:
+      async_save: true
+      ckpt_assume_constant_structure: true
     context_parallel_size: 8
     distributed_data_parallel_config:
       grad_reduce_in_fp32: true

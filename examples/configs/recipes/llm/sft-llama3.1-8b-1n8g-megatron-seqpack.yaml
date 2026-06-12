@@ -21,6 +21,9 @@ policy:
   optimizer: null
   megatron_cfg:
     enabled: true
+    checkpoint:
+      async_save: true
+      ckpt_assume_constant_structure: true
     tensor_model_parallel_size: 2
     pipeline_model_parallel_size: 2
     optimizer:

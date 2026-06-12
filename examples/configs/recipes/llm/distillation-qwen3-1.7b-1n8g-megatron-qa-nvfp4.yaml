@@ -6,6 +6,9 @@ policy:
   quant_calib_size: 64
   quant_sequence_length: 1024
   megatron_cfg:
+    checkpoint:
+      async_save: true
+      ckpt_assume_constant_structure: true
     tensor_model_parallel_size: 1
     pipeline_model_parallel_size: 1
     context_parallel_size: 1
